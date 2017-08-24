@@ -1,0 +1,147 @@
+html{
+    font-size: 10px;
+}
+body{
+    margin: 0;
+    background-color: #f8f8f8;
+    user-select: none;
+}
+button{
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    border: none;
+    box-shadow: none;
+    width: 10rem;
+    height: 3.6rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    border-radius:.4rem;
+    color: #fff;
+    background-color: #00b497;
+}
+.hidden{
+    display: none;
+}
+
+/*player*/
+.p1.active ,.p2.active{
+    border-bottom: .2rem solid red;!important;
+}
+.container{
+    width: 27rem;
+    margin: auto;
+}
+.players{
+    position: relative;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.players > div{
+    flex: 1;
+    height: 9rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+.p1 ,.p2{
+    font-size: 8rem;
+    position:relative;
+    margin: 0 .2rem;
+    border-bottom: .2rem solid rgba(0,0,0,0);
+}
+.p1{
+    background-size:80%;
+}
+.p2{
+    background-size:80%;
+}
+.vs{
+    background-image: url(../img/VS.svg);
+    background-size:40%;
+}
+.dice{
+    width: 2rem;
+    height: 2rem;
+    outline: none;
+    border: 0;
+    bottom:.5rem;
+    position: absolute;
+    background: url(../img/dice.svg) no-repeat center center;
+    background-size:90%;
+}
+.dice#dice1{
+    left: 8rem;
+}
+.dice#dice2{
+    right: 8rem;
+}
+
+/*playground*/
+.playground{
+    margin: 3rem auto;
+    border: 0.1rem solid #dddddd;
+    border-radius: .4rem;
+    background: #ffffff;
+    box-shadow: 0 0 .5rem rgba(0,0,0,0.2);
+    position: relative;
+}
+.row{
+    display: flex;
+    border-bottom: .1rem solid #dddddd;
+}
+.row:last-child{
+    border-bottom:0;
+}
+.square{
+    cursor: pointer;
+    height: 9rem;
+    flex:1;
+    border-right: .1rem solid #dddddd;
+    background-size: 80%;
+}
+.square:last-child{
+    border-bottom: 0;
+}
+.square.p1{
+    background: url(../img/tiger.svg) no-repeat center center;
+    background-size: 80%;
+}
+.square.p2{
+    background: url(../img/tiger.svg) no-repeat center center;
+    background-size: 80%;
+}
+.mask{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom:0;
+    background: rgba(255,255,255,0.8);
+}
+.restart{
+    background-color: #ff9800;
+}
+img{
+    width: 10rem;
+    margin:auto ;
+    display: block;
+}
+.logo{
+    position: relative;
+    top: -2rem;
+    width: 15rem;
+    height:15rem;
+    background: url(../img/tiger.svg) no-repeat center center;
+    background-size: 90%;
+}
+
+/*control*/
+.control{
+    text-align: center;
+}

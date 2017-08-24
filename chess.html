@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>#Chess</title>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/chessStyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="players">
+            <div id="p1" class="p1"></div>
+            <div class="vs"></div>
+            <div id="p2" class="p2"></div>
+            <button id="dice1" class="dice"></button>
+            <button id="dice2" class="dice"></button>
+        </div>
+        <div class="playground">
+            <div class="row">
+                <div class="square p1" data-index="0"></div>
+                <div class="square p2" data-index="1"></div>
+                <div class="square" data-index="2"></div>
+            </div>
+            <div class="row">
+                <div class="square" data-index="3"></div>
+                <div class="square" data-index="4"></div>
+                <div class="square" data-index="5"></div>
+            </div>
+            <div class="row">
+                <div class="square" data-index="6"></div>
+                <div class="square" data-index="7"></div>
+                <div class="square" data-index="8"></div>
+            </div>
+            <div class="mask">
+                <button class="start hidden">start</button>
+                <div class="winner ">
+                    <img src="./img/win.svg" alt="WINNER">
+                    <div class="logo"></div>
+                </div>
+            </div>
+        </div>
+        <div class="control">
+            <button class="restart">restart</button>
+        </div>
+
+    </div>
+<script type="text/javascript" src="js/chessMain.js"></script>
+</body>
+</html>
