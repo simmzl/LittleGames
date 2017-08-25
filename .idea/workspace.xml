@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e99b224-6a53-4781-882b-68382a11b15b" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chess.html" afterPath="$PROJECT_DIR$/chess.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/chessStyle.css" afterPath="$PROJECT_DIR$/css/chessStyle.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/chessMain.js" afterPath="$PROJECT_DIR$/js/chessMain.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,17 +18,17 @@
     <splitter split-orientation="horizontal" split-proportion="0.70907736">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="chessStyle.css" pinned="false" current-in-tab="false">
+          <file leaf-file-name="chessStyle.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/chessStyle.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="361">
-                  <caret line="104" column="21" lean-forward="false" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
+                <state relative-caret-position="247">
+                  <caret line="78" column="41" lean-forward="true" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="note.txt" pinned="false" current-in-tab="true">
+          <file leaf-file-name="note.txt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/note.txt">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="266">
@@ -157,6 +153,11 @@
               <item name="LittleGames" type="b2602c69:ProjectViewProjectNode" />
               <item name="LittleGames" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LittleGames" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LittleGames" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -196,12 +197,12 @@
       <updated>1503560104389</updated>
       <workItem from="1503560106108" duration="27677000" />
       <workItem from="1503631919872" duration="22413000" />
-      <workItem from="1503674194928" duration="8707000" />
+      <workItem from="1503674194928" duration="8917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58797000" />
+    <option name="totallyTimeSpent" value="59007000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -344,18 +345,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/chessStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="104" column="21" lean-forward="false" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/note.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/vs.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/chessStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="78" column="41" lean-forward="true" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
           <folding />
         </state>
       </provider>
