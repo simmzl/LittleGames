@@ -1,7 +1,11 @@
 html{
     font-size: 10px;
+    height: 100%;
 }
 body{
+    height: 100%;
+    display: flex;
+    align-items:center;
     margin: 0;
     background-color: #f8f8f8;
     user-select: none;
@@ -17,17 +21,29 @@ button{
     font-size: 1.6rem;
     font-weight: bold;
     letter-spacing: .1rem;
-    border-radius:.4rem;
+    border-radius:4px;
     color: #fff;
     background-color: #00b497;
 }
-.hidden{
-    display: none;
+[hidden]{
+    display: none!important;
+}
+[disabled] {
+    background: #ccc !important;
+    cursor: not-allowed !important;
+}
+.container{
+
 }
 
 /*player*/
-.p1.active ,.p2.active{
-    border-bottom: .2rem solid red;!important;
+.active{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0;
+    border-bottom: .2rem solid #ff9800!important;
 }
 .container{
     width: 27rem;
@@ -40,6 +56,7 @@ button{
     align-items:center;
 }
 .players > div{
+    position: relative;
     flex: 1;
     height: 9rem;
     background-repeat: no-repeat;
@@ -81,36 +98,39 @@ button{
 
 /*playground*/
 .playground{
-    margin: 3rem auto;
-    border: 0.1rem solid #dddddd;
-    border-radius: .4rem;
+    margin: 2rem auto;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
     background: #ffffff;
-    box-shadow: 0 0 .5rem rgba(0,0,0,0.2);
+    box-shadow: 0 0 1rem rgba(0,0,0,0.2);
     position: relative;
 }
 .row{
     display: flex;
-    border-bottom: .1rem solid #dddddd;
+    border-bottom: 1px solid #dddddd;
 }
 .row:last-child{
     border-bottom:0;
 }
-.square{
-    cursor: pointer;
+
+.square {
+    flex: 1;
     height: 9rem;
-    flex:1;
-    border-right: .1rem solid #dddddd;
+    cursor: pointer;
     background-size: 80%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border-right: 1px solid #ccc;
 }
 .square:last-child{
-    border-bottom: 0;
+    border-right: 0;
 }
 .square.p1{
-    background: url(../img/tiger.svg) no-repeat center center;
+    background: url(../img/anima/1.svg) no-repeat center center;
     background-size: 80%;
 }
 .square.p2{
-    background: url(../img/tiger.svg) no-repeat center center;
+    background: url(../img/anima/2.svg) no-repeat center center;
     background-size: 80%;
 }
 .mask{
@@ -122,7 +142,20 @@ button{
     left: 0;
     right:0;
     bottom:0;
-    background: rgba(255,255,255,0.8);
+    background: rgba(255,255,255,0.9);
+    transition: all .4s ease;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform:scale(1) ;
+    -o-transform:scale(1) ;
+    transform: scale(1);
+}
+.mask.mini{
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform:scale(0) ;
+    -o-transform:scale(0) ;
+    transform: scale(0);
 }
 .restart{
     background-color: #ff9800;
@@ -137,7 +170,7 @@ img{
     top: -2rem;
     width: 15rem;
     height:15rem;
-    background: url(../img/tiger.svg) no-repeat center center;
+    background:  no-repeat center center;
     background-size: 90%;
 }
 

@@ -1,0 +1,15 @@
+HTML 5 全局 hidden 属性
+[hidden]{
+    display:none;
+}
+querySelector()
+&
+querySelectorAll()
+__proto__:NodeList类数组
+onClickSquare
+
+HTML data-* 新属性
+find()返回第一个
+filter()返回所有
+
+使用var self = this;
