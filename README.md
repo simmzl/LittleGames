@@ -63,10 +63,12 @@ js版本：1.6
 返回与指定的选择器组匹配的文档中的元素列表 **返回的对象是NodeList，是对象object，也是类数组。**
 
 **那么什么是类数组？**
-    即有数组的一些基本属性length、下标索引，其子元素可通过all.item(i)访问；但不完全是数组，如NodeList是DOM操作如getElementsByTagName()等取出来的为类数组；
+
+即有数组的一些基本属性length、下标索引，其子元素可通过all.item(i)访问；但不完全是数组，如NodeList是DOM操作如getElementsByTagName()等取出来的为类数组；
     
-    他们也有自己的属性，例如item，另外NodeList最大的特点就是时效性（live）。与数组的区别以及时效性可以看下[详解](http://blog.csdn.net/u013853928/article/details/52856596)；
-    NodeList具有length，下标索引这些数组的属性特征，但是不可以使用数组的push、pop、shift、unshift等数组原生的方法，这时候需要将其转化为数组；
+他们也有自己的属性，例如item，另外NodeList最大的特点就是时效性（live）。与数组的区别以及时效性可以看下[详解](http://blog.csdn.net/u013853928/article/details/52856596)；
+
+NodeList具有length，下标索引这些数组的属性特征，但是不可以使用数组的push、pop、shift、unshift等数组原生的方法，这时候需要将其转化为数组；
 在该项目中，
 
     var $squares = [].slice.call(document.querySelectorAll('.square'));
@@ -79,16 +81,22 @@ js版本：1.6
 说明：call 方法可以用来代替另一个对象调用一个方法。call 方法可将一个函数的对象上下文从初始的上下文改变为由 thisObj 指定的新对象。
 很难懂......找到一个实例：
 
-    function add(a,b)  {alert(a+b);}
-    function sub(a,b)  {alert(a-b);}
-    add.call(sub,3,1);
-    这个例子意思就是用add来替换sub，add.call(sub,3,1) == add(3,1)，//注意：js中的函数其实是对象，函数名是对 Function 对象的引用。
+      function add(a,b)  {
+            alert(a+b);
+      }
+      function sub(a,b)  {
+            alert(a-b);
+      }
+      add.call(sub,3,1);
+      这个例子意思就是用add来替换sub，add.call(sub,3,1) == add(3,1)，//注意：js中的函数其实是对象，函数名是对 Function 对象的引用。
     
 所以[].slice.call(document.querySelectorAll('.square'))的意思是：
 
 **用call()将document.querySelectorAll('.square')这个对象（类数组）的值，从而能够通过数组方法slice()截取出来，存入$squares中**；
 
-（理解了半天才懂），也可以通过var $squares = Array.prototype.slice.call(all)实现；
+（理解了半天才懂），也可以通过Array.prototype.slice.call(all)实现：
+
+      var $squares = Array.prototype.slice.call(all)
 
 两篇不错的相关博客：
 [详解](http://www.cnblogs.com/dingxiaoyue/p/4948166.html)
