@@ -88,7 +88,7 @@ button{
     bottom:.5rem;
     position: absolute;
     background: url(../img/dice.svg) no-repeat center center;
-    background-size:90%;
+    background-size:24px 24px;
 }
 .dice#dice1{
     left: 8rem;
